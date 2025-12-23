@@ -1,13 +1,8 @@
 html {
   margin: 0;
   padding: 0;
-}
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  --blue: #00acdc;
 }
 
 header {
@@ -16,6 +11,8 @@ header {
   align-items: center;
   margin: 0;
   padding: 0 50px;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 .header__nav-list {
@@ -32,7 +29,6 @@ header {
   display: flex;
   align-items: center;
   margin: 0 10px;
-  position: relative;
   line-height: 60px;
 }
 
@@ -50,10 +46,11 @@ header {
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .header__nav-link:hover {
-  color: #00acdc;
+  color: var(--blue);
 }
 
 .header__logo {
@@ -63,7 +60,7 @@ header {
 }
 
 .is-active {
-  color: #00acdc;
+  color: var(--blue);
 }
 
 .is-active::after {
@@ -71,7 +68,7 @@ header {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #00acdc;
+  background-color: var(--blue);
   border-radius: 8px;
   position: absolute;
   bottom: 0;
