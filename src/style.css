@@ -5,6 +5,10 @@ html {
   --blue: #00acdc;
 }
 
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
